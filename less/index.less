@@ -131,8 +131,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 /*Variables*/
-@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
-@bg-color: #484848;
+@import url("https://fonts.googleapis.com/css?family=Lilita+One|Ubuntu&display=swap");
+@bg-color: #b8b5b5;
 @title-color: #52acff;
 
 /*Mixins*/
@@ -149,11 +149,38 @@ html {
   font-family: "Ubuntu", sans-serif;
 }
 
+h1 {
+  color: @title-color;
+  font-size: 5rem;
+  font-family: "Lilita One", cursive;
+}
+
+h2 {
+  color: @title-color;
+  font-size: 2.5rem;
+}
+
 body {
   font-size: 1.6rem;
-  @bg-color;
+  background: @bg-color;
 }
 
 .mainContainer {
-  border: 100px solid red;
+  width: 100%;
+}
+
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        text-decoration: none;
+        font-size: 2.8rem;
+      }
+    }
+  }
 }
